@@ -1,4 +1,4 @@
-angular.module('routingApp', ['ngRoute', 'routingControllers']);
+angular.module('routingApp', ['ngRoute', 'routingControllers', 'jaFinalProjectDirectives']);
 
 // configure our routes
 angular.module('routingApp').config(function($routeProvider) {

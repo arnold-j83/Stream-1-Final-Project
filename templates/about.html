@@ -2,3 +2,16 @@
     <!--displays title-->
     <h1>{{title}} Page</h1>
 </div>
+
+<div class="row">                
+      <div class="col-md-4" >
+            <h1>Our Locations</h1>
+            <select ng-model="map" ng-options="mapview.address for mapview in maps">
+            </select>
+      </div>
+      <div class="col-md-4" >
+            <h3>{{map.address}}</h3>
+      <!-- flexible map , map object defined in controller directive -->
+            <make-map map="map"></make-map>
+      </div>
+</div>
