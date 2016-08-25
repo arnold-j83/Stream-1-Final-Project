@@ -3,29 +3,39 @@ angular.module('routingControllers', [])
 		$scope.title = "Home";
 	})
 	.controller('AboutController', function($scope) {
-		$scope.title = "About";
+		$scope.title = "About Apartment Brisas";
 		$scope.maps = [{
         
-        address: '3 Avenalls Parade, Cheltenham',
-        zoom: 14,
-        width: 400      
+        address: 'Brisas Del Mar, Formentera del Segura, spain',
+        zoom: 16,
+        width: 1000      
         },
         {
-        address: '28 Gallops Lane, Cheltenham',
+        address: 'Guardamar del Segura beach, Guardamar del Segura, Spain',
         zoom: 16,
-        width: 400      
+        width: 1000      
+        }
+        ,
+        {
+        address: 'La Marina, Guardamar del Segura, Spain',
+        zoom: 16,
+        width: 1000      
         }];
   $scope.map = $scope.maps[0];
 	})
 	.controller('option1Controller', function($scope) {
-		$scope.title = "Menu Option 1";
+		$scope.loading = true;
+		$scope.title = "Apartment Brisas location";
 		})
 	.controller('option2Controller', function($scope) {
-		$scope.title = "Menu Option 2";
+		$scope.loading = true;
+		$scope.title = "Activities";
 		})
 	.controller('option3Controller', function($scope) {
+		$scope.loading = true;
 		$scope.title = "Menu Option 3";
 		})
 	.controller('option4Controller', function($scope) {
+		$scope.loading = true;
 		$scope.title = "Menu Option 4";
 		});

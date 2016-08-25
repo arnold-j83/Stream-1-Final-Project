@@ -37,13 +37,13 @@ angular.module('jaFinalProjectDirectives',[]).directive('movieInfoBox', function
  
                 $scope.mapDimensions = function() {
                     if (!$scope.map.width) {
-                        var width = 650;
+                        var width = 1000;
                     } else {
                         width = $scope.map.width;
                     }
  
                     if (!$scope.map.height) {
-                        var height = 400;
+                        var height = 800;
                     } else {
                         height = $scope.map.height;
                     }

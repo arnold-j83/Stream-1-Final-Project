@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Angular Routing</title>
+		<title>Apartment Brisas | Costa Blanca - Spain</title>
 		<!-- include the bootstrap css -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="utf-8" />
@@ -11,46 +11,68 @@
         <script src="js/vendor/angular-route.min.js"></script>
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <meta name="description" content="Rent our 2 bedroom luxury Apartment Brisas for as little as £120 per week. Situated in a beautiful Spanish village. Exclusive use of a communal pool" />
+        <meta name="keywords" content="Apartment Brisas, Apartment Costa Blanca, Costa Blanca, Apartments in Costa Blanca, Apartment Hire, Spanish Apartment" />
+        <meta name="robots" content="all" />
+        <meta name="copyright" content="2016 Apartment Brisas. All rights reserved." />
 	</head>
 	<!-- set our ng-app in the body -->
 	<body ng-app="routingApp">
 		<nav class="navbar navbar-inverse">
-    		<div class="container">
-        		<div class="nav navbar-header">
-            		<a class="navbar-brand" href="#/home">Website Template</a>
-            		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
-                	<span class="sr-only">Toggle Navigation</span>
-                	<span class="icon-bar"></span>
-                	<span class="icon-bar"></span>
-                	<span class="icon-bar"></span>
-            		</button>
-        		</div>
-        		<div class="collapse navbar-collapse" id="myCollapsingList">
-            		<ul class="nav navbar-nav navbar-right">
-                		<li><a href="#/home">Home</a></li>
-                		<li><a href="#/about">About</a></li>
-                		<li class="dropdown">
-                    		<a class="dropdown-toggle" data-toggle="dropdown" role="button"aria-haspopup="true" aria-expanded="false">Menu Options <span class="caret"></span></a>
-                    		<ul class="dropdown-menu">
-                        		<li><a href="#/option1">Option 1</a></li>
-                        		<li><a href="#/option2">Option 2</a></li>
-                        		<li><a href="#/option3">Option 3</a></li>
-                        		<li><a href="#/option4">Option 4</a></li>
-                    		</ul>
-                		</li>
-            		</ul>
-        		</div>
+    		<div class="nav navbar-header">
+        		<a class="navbar-brand" href="#/home">Apartment Brisas</a>
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
+            	<span class="sr-only">Toggle Navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+        		</button>
     		</div>
+    		<div class="collapse navbar-collapse" id="myCollapsingList">
+            <a id="top"></a>
+        		<ul class="nav navbar-nav navbar-right">
+            		<li><a href="#/home">Home</a></li>
+            		<li><a href="#/about">Location</a></li>
+            		<li class="dropdown">
+                		<a class="dropdown-toggle" data-toggle="dropdown" role="button"aria-haspopup="true" aria-expanded="false">More Information <span class="caret"></span></a>
+                		<ul class="dropdown-menu">
+                    		<!--<li><a href="#/option1">Location</a></li>-->
+                    		<li><a href="#/option2">Activities</a></li>
+                    		<li><a href="#/option3">Prices</a></li>
+                    		<li><a href="#/option4">Availability</a></li>
+                		</ul>
+            		</li>
+        		</ul>
+    		</div>
+    		
 		</nav>
 		<!-- this is where our templates will be injected -->
-		<div class="container">
+		
 			<div ng-view>
 				
 			</div>
-		</div>
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                    
+                    <h5>Contact: David Midgley<br />
+                    <a href="tel:+447903088101">+44 7903 088101</a></h5>
+                    <h5><a href="mailto:david@apartmentbrisas.co.uk" title="david@apartmentbrisas.co.uk" target="_blank" class="active" style="text-decoration: none;">david@apartmentbrisas.co.uk</a></h5></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                    <h5> Follow us</h5>
+                        <a href="https://www.facebook.com/ApartmentBrisas" target="_blank" title="Facebook" class="facebookr-follow-button" data-show-count="false"><img src="img/fac.png" width="35" height="35" title="Facebook" alt="facebook" /></a>
+                        <a href="https://twitter.com/ApartmentBrisas" target="_blank" title="Twitter" class="twitter-follow-button" data-show-count="false"><img src="img/twit.png" width="35" height="35" title="Twitter" alt="twitter" /></a>
+                        <a href="https://plus.google.com/104702473723959288394/about" rel="author" target="_blank" title="Google" class="googleplus-follow-button" data-show-count="false"><img src="img/goo.png" width="35" height="35" title="Google" alt="google plus" /></a><a href="https://pinterest.com/davidmidgley/apartment-brisas" target="_blank" title="Pintrest" class="pintrest-follow-button" data-show-count="false"><img src="img/pin.png" width="35" height="35" title="Pintrest" alt="pintrest" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+		
 	</body>
 	<!-- these are our specific javascript files -->
 	<script src="js/app.js"></script>
 	<script src="js/controller.js"></script>
 	<script src="js/directive.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </html>
